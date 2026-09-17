@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fahad's Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <h2>Fahad's Portfolio</h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <p id="greeting">Welcome to my portfolio!</p>
+          <h1>Hello, I'm Fahad Altuwayjiri</h1>
+          <p>I am a university student learning web development.</p>
+          <a class="button" href="#projects">See My Projects</a>
+        </div>
+        <img src="assets/images/profile-placeholder.svg" alt="Profile placeholder">
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About Me</h2>
+      <p>I am a Computer Science student interested in learning how websites are made. I am currently practicing HTML, CSS, and JavaScript, and I hope to improve my skills by building more projects.</p>
+
+      <h3>My Skills</h3>
+      <ul class="skills">
+        <li>PYTHON</li>
+        <li>JAVA</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>GitHub</li>
+      </ul>
+
+      <div class="student-info">
+        <p><strong>Name:</strong> Fahad Altuwayjiri</p>
+        <p><strong>Student ID:</strong> s202370250</p>
+        <p><strong>Major:</strong> Computer Science</p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section section">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-list">
+          <article class="project-card">
+            <img src="assets/images/classroom-reservation.svg" alt="Classroom Reservation">
+            <h3>Classroom Reservation</h3>
+            <p>A system that allows students to search for available university classrooms and reserve unused rooms by date and time.</p>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/images/unibus-project.svg" alt="UNIBus">
+            <h3>UNIBus</h3>
+            <p>A university bus tracking system that helps students view bus schedules, reserve trips, and manage their bus requests. The application aims to make campus transportation easier and more organized for university students.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact Me</h2>
+      <p>If you would like to contact me, please fill in this form.</p>
+
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+        <p id="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Fahad Altuwayjiri</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
